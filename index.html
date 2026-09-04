@@ -3,35 +3,218 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>KOL Similarity Finder</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f8f7;
+      color: #1f2933;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e4e9e6;
+      border-radius: 18px;
+      padding: 42px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 18px;
+      border-radius: 999px;
+      background: #edf7f1;
+      color: #146c43;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: 40px;
+      line-height: 1.2;
+      color: #111827;
+    }
+
+    h2 {
+      margin-top: 36px;
+      font-size: 22px;
+      color: #111827;
+    }
+
+    p {
+      font-size: 17px;
+      margin: 14px 0;
+    }
+
+    .youtube-box {
+      margin-top: 30px;
+      padding: 20px;
+      border: 1px solid #eadede;
+      border-radius: 12px;
+      background: #fffafa;
+    }
+
+    .youtube-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #b91c1c;
+      margin-bottom: 6px;
+    }
+
+    .features {
+      margin: 20px 0 0;
+      padding-left: 22px;
+    }
+
+    .features li {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .links {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      color: #0f6b4f;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 14px;
+      color: #667085;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 14px;
+      }
+
+      .card {
+        padding: 26px 20px;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>KOL Similarity Finder</h1>
 
-  <p>
-    KOL Similarity Finder is an internal creator discovery and research tool
-    used by authorized team members for YouTube creator sourcing and marketing research.
-  </p>
+  <main class="container">
 
-  <p>
-    The application helps users identify relevant public YouTube creators based on
-    content similarity, language, country, subscriber count, and average video views.
-  </p>
+    <section class="card">
 
-  <p>
-    The tool is not publicly available and is used only by authorized internal users.
-  </p>
-  
-  <p>
-  This application uses the YouTube Data API for public creator discovery.
-</p>
+      <div class="badge">
+        Internal Creator Discovery Tool
+      </div>
 
-<p>
-  <a href="privacy.html">Privacy Policy</a>
-</p>
+      <h1>KOL Similarity Finder</h1>
 
-  <p>
-    <a href="privacy.html">Privacy Policy</a>
-  </p>
+      <p>
+        KOL Similarity Finder is an internal creator discovery and research tool
+        used by authorized team members for creator sourcing, influencer research,
+        and marketing campaign planning.
+      </p>
+
+      <p>
+        The application helps users identify relevant public creators based on
+        content similarity and publicly available information such as language,
+        country, subscriber count, and average video views.
+      </p>
+
+      <p>
+        The tool is not offered to the general public and is used only by
+        authorized internal users.
+      </p>
+
+      <h2>Core Features</h2>
+
+      <ul class="features">
+        <li>Discover creators related to a selected creator or content category.</li>
+        <li>Filter creators by country, language, subscriber count, and average views.</li>
+        <li>Review publicly available creator and video metadata.</li>
+        <li>Use caching and deduplication to reduce unnecessary API requests.</li>
+        <li>Maintain internal exclusion lists to avoid repeatedly reviewing the same creators.</li>
+      </ul>
+
+      <div class="youtube-box">
+
+        <div class="youtube-title">
+          Powered by YouTube Data API Services
+        </div>
+
+        <p>
+          KOL Similarity Finder uses YouTube API Services to retrieve publicly
+          available YouTube channel, video, and search metadata for internal creator
+          discovery and research.
+        </p>
+
+        <p>
+          The application does not upload, edit, or delete YouTube content and does
+          not access private YouTube account information.
+        </p>
+
+        <p>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit YouTube
+          </a>
+        </p>
+
+      </div>
+
+      <div class="links">
+
+        <a href="privacy.html">
+          Privacy Policy
+        </a>
+
+        <a href="terms.html">
+          Terms of Service
+        </a>
+
+      </div>
+
+      <div class="footer">
+        KOL Similarity Finder · Internal Use Only
+      </div>
+
+    </section>
+
+  </main>
+
 </body>
 </html>
